@@ -1,0 +1,14 @@
+dn: cn=admin,ou=Group,dc=test,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: admin
+userPassword: {crypt}x
+gidNumber: 10001
+
+dn: cn=user,ou=Group,dc=test,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: user
+userPassword: {crypt}x
+gidNumber: 10002
+

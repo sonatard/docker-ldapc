@@ -1,0 +1,12 @@
+version: '2'
+services:
+  ldap:
+    image: beli/ldap
+    volumes:
+        - ./config:/config
+        - ./data:/data
+    environment:
+        - CONF_ROOTPW=password
+        - CONF_BASEDN=dc=test,dc=com
+    ports:
+        - 389:389
